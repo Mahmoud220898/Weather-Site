@@ -1,0 +1,54 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+
+main {
+    background-image: url(../images/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.today-weather {
+    border-bottom: 3px dotted black;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+    color: darkblue;
+}
+ 
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid white;
+  border-color: white transparent white transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

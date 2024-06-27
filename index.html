@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="images/sunny.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="images/sunny.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Weather
+            </a>
+            <ul class="nav justify-content-end text-info">
+                <li class="nav-item">
+                    <a class="nav-link active text-info" text-info aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info rounded-pill" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="interface">
+        <header class="d-flex justify-content-between align-items-center pt-4 mx-5">
+            <div class="bg-secondary opacity-75 p-3 py-2 rounded-3 fw-bold text-white">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="location"></span>
+            </div>
+            <div>
+                <div class="findInput position-relative">
+                    <input type="text" id="findLocation"
+                        class="searchInput form-control rounded-pill bg-primary-subtle opacity-75 "
+                        placeholder="Find your address, location" style="width: 500px; font-weight: 700;">
+                    <button
+                        class="findBtn btn btn-primary btn-sm position-absolute rounded-pill py-2 px-5 top-0 end-0 fw-bold"><i
+                            class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </div>
+            </div>
+            <div class="bg-secondary opacity-75 p-3 py-2 rounded-3 fw-bold text-white">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="todayDate "></span>
+            </div>
+        </header>
+        <section
+            class="today-weather pt-3 d-flex justify-content-center align-items-center mt-4 flex-column text-white w-75 m-auto">
+            <h1 class="cityName fw-bolder fs-3"></h1>
+            <h2 class="fw-bolder display-4 " id="weatherTemp"></h2>
+            <p id="weatherCondition" class="fw-semibold fs-5"></p>
+            <div class="d-flex align-items-center gap-3">
+                <p>
+                    <img src="" width="30px" alt="">
+                    <span id="windSpeed" class="ms-2 fw-semibold"></span>
+                </p>
+                <p>
+                    <img src="" width="30px" alt="">
+                    <span id="rainProbability" class="fw-semibold"></span>
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2 class="fw-bolder text-center fs-3 mt-3 text-dark">Daily Weather</h2>
+            <div class="weatherCards py-2 px-3 d-flex justify-content-around">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
